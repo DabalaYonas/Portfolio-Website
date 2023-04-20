@@ -216,6 +216,7 @@ a {
 }
 
 .skills-text {
+    padding: 0px;
     margin-top: -20px;
     animation: move-down-anim 1s ease-out;
 }
@@ -584,14 +585,14 @@ a {
     .work-menus li {
         margin: 10px;
     }
-
+/* 
     .works-img .img-cover {
         padding: 30px; 
         width: 400px;
     }
     .works-img img {
         width: 400px;
-    }
+    } */
 
     .contact-image {
         text-align: center;
@@ -643,13 +644,14 @@ a {
 
     .hero-bottom-bar {
         padding: 8px 6px;
-        left: 0px;
+        left: 1%;
         border-radius: 16px;
+        width: 98%;
     }
 
     .bottom-bar-text {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px 6px;
     }
 
@@ -689,6 +691,10 @@ a {
         font-size: 300px;
     }
 
+    .skills-text {
+        padding: 0px;
+    }
+
     .disc-parag {
         width: 100%;
     }
@@ -705,6 +711,12 @@ a {
         margin: 10px;
     }
 
+    .contact-image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .works-img .img-cover {
         padding: 30px; 
         width: calc(100% - 40px);
@@ -712,8 +724,14 @@ a {
     .works-img img {
         width: 100%;
     }
+}
 
-    .contact-image img {
-        width: 100%;
+@media screen and (max-width: 1000px) {
+    .works-img .img-cover {
+        padding: 30px;
+        width: 400px;
+    }
+    .works-img img {
+        width: 400px;
     }
 }
