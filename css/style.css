@@ -222,11 +222,7 @@ a {
 }
 
 .skills-img {
-    animation-name: move-up-anim;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
+    animation: move-up-anim 1s ease-out;
 }
 
 @keyframes move-up-anim {
