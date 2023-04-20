@@ -716,16 +716,6 @@ a {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .works-img .img-cover {
-        padding: 30px; 
-        width: calc(100% - 40px);
-    }
-    .works-img img {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .works-img .img-cover {
         padding: 30px;
@@ -733,5 +723,15 @@ a {
     }
     .works-img img {
         width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .works-img .img-cover {
+        padding: 30px; 
+        width: calc(100% - 40px);
+    }
+    .works-img img {
+        width: 100%;
     }
 }
