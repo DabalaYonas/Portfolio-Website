@@ -222,7 +222,7 @@ a {
 }
 
 .skills-img {
-    animation: move-up-anim 1s ease-out;
+    animation: move-up-anim 1s 4s infinite ease-out;
 }
 
 @keyframes move-up-anim {
