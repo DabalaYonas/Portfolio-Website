@@ -27,9 +27,12 @@
                         w++;
                     }, 60);
                 }
-                setTimeout(() => {
+                while(true) {
+                    setTimeout(() => {
                     myloop();
                 }, 300);
+                }
+                
 
             };
             function displayWorks(a) {
