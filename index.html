@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dabala Yonas</title>
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="stylesheet" href="./css/all.css" type='text/css'/>
+        <link rel="stylesheet" href="./css/style.css" type='text/css'/>
+      
+        <script>
+
+            window.onload = function() {
+                var text = document.getElementById("disc");
+                var words = ["I", "'", "m", " ", "a", " ", "S", "o", "f", "t", "w", "a", "r", "e", " ", "E", "n", "g", "i", "n", "e", "e", "r"];
+                var newWord = "";
+
+                var w = 0;
+                text.focus();
+                
+                function myloop() {
+                    setTimeout(() => {
+                        if(w < 22) {
+                            myloop();
+                        }
+                        newWord = newWord + words[w];
+                        text.innerHTML = newWord;
+                        w++;
+                    }, 60);
+                }
+                setTimeout(() => {
+                    myloop();
+                }, 300);
+
+            };
+            function displayWorks(a) {
+                var all = document.getElementsByClassName("works-img");
+                var webs = document.getElementsByClassName("web-img");
+                var apps = document.getElementsByClassName("app-img");
+                if (a == 1) {
+                    for(var w in webs) {
+                        webs[w].style.display = "block";
+                    }
+
+                    for(var i in apps) {
+                        var na = apps[i];
+                        na.style.display = "none";
+                    }
+                } else if(a == 2) {
+                    for(var i in apps) {
+                        apps[i].style.display = "block";
+                    }
+
+                    for(var w in webs) {
+                        var nw = webs[w];
+                        nw.style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div id="home" class="nav-bar">
+            <div class="small-content">
+                <nav>
+                        <h2>DJAAG WC</h2>
+                        <ul class="menus">
+                            <a href="#home"><li>Home</li></a>
+                            <a href="#about"><li>About me</li></a>
+                            <a href="#skills"><li>Skills</li></a>
+                            <a href="#works"><li>Works</li></a>
+                            <a href="#contact-me"><button class="btn-gradient">CONTACT US</button></a>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content row-2">
+            <div class="hero-bottom-bar row-2">
+                <p class="bottom-bar-text">5+ Years<br><span>Experiance</span></p>
+                <p class="line-h"></p>
+                <p class="bottom-bar-text">2+ Companies<br><span>Partner</span></p>
+                <p class="line-h"></p>
+                <p class="bottom-bar-text">4+ Works<br><span>Finished</span></p>
+            </div>
+            <div class="content-left">
+                <h2 class="header">HELLO, <span class="name">I'M DABALA YONAS</span></h2>
+                <p id="disc" class="content-text"></p>
+                
+                <a href="https://www.facebook.com/dabala.yonas.asefa" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="social-media-icons fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/dabala_yonas" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-twitter social-media-icons"></i></a>
+                <a href="https://www.instagram.com/dabalayonas/" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-instagram social-media-icons"></i></a>
+                <a href="https://t.me/daboyon" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-telegram social-media-icons"></i></a>
+                <a href="https://www.github.com/dabalayonas" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-github"></i></a>
+                <br><br>
+                <a href="#about"><button class="btn-gradient">KNOW ME MORE</button></a>
+            </div>
+            <img class="right-image" src="img/image-2.png" />
+         </div>
+        </div>
+
+         <div id="about" class="about-section small-content">
+            <div class="row-center">
+                <div class="about-image-1">
+                    <div class="about-image">
+                        <img class="normal-size-img" src="img/image-2.jpg" />
+                    </div>
+                    </div>
+                <div class="about-disc">
+                    <h2>About <br>Dabala Yonas</h2>
+
+                    <p>My name is Dabala Yonas Asefa I was born 
+                        in July 24 1994 Ec. at east Oromia Wollega 
+                        Gaba Robi city. My name is Dabala Yonas Asefa I was born 
+                        in July 24 1994 Ec. at east Oromia Wollega 
+                        Gaba Robi city. My name is Dabala Yonas Asefa I was born 
+                        in July 24 1994 Ec. at east Oromia Wollega 
+                        Gaba Robi city. My name is Dabala Yonas Asefa I was born 
+                        in July 24 1994 Ec. at east Oromia Wollega 
+                        Gaba Robi city.</p>
+                </div>
+            </div>
+         </div>
+
+         <div id="skills" class="skills-section">
+            <div class="small-content">
+            <div class="center-content">
+                <h1 class="large-header">I'm Professions In</h1>
+                <p class="disc-parag-center">I am a developer for over 5 year and I developed some experince in this years.</p>
+            </div>
+            <div class="row-2">
+                <div class="skills-text">
+                    <h2 class="large-header">Mobile App <span>Developer</span></h2>
+                    <p class="disc-parag">I was developed some skills in a years of studying and 
+                        practicing in software development. I was developed 
+                        some skills in a years of studying and practicing in 
+                        software development.</p>
+                    <br>
+                    <li class="progess-line"><span class="p-disc">Java</span><span class="p-line"></span></li>
+                    <li class="progess-line"><span class="p-disc">Flutter</span><span class="p-line"></span></li>
+                    <br><br>
+                    <a href="#contact-me"><button class="btn-round btn-gradient-2">Contact me</button></a>
+                </div>
+                
+                <img class="skills-img" width="320" src="img/mobile.png" />
+            </div> 
+            
+            <div class="row-2">
+                <img class="skills-img" width="400" src="img/pc.png" />
+                <div class="skills-text">
+                    <h2 class="large-header">Website <br><span>Design & Developer</span></h2>
+                    <p class="disc-parag">I was developed some skills in a years of studying and 
+                        practicing in software development. I was developed 
+                        some skills in a years of studying and practicing in 
+                        software development.</p>
+                    <br>
+                    <li class="progess-line"><span class="p-disc">PHP</span><span class="p-line"></span></li>
+                    <li class="progess-line"><span class="p-disc">Django</span><span class="p-line"></span></li>
+                    <br><br>
+                    <a href="#contact-me"><button class="btn-round btn-gradient-2">Contact me</button></a>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="skills-text">
+                    <h2 class="large-header">Programming Language <br><span>Skills</span></h2>
+                    <p class="disc-parag">I was developed some skills in a years of studying and 
+                        practicing in software development. I was developed 
+                        some skills in a years of studying and practicing in 
+                        software development.</p>
+                    <br>
+                    <li class="progess-line"><span class="p-disc">Java</span><span class="p-line"></span></li>
+                    <li class="progess-line"><span class="p-disc">Pyhton</span><span class="p-line"></span></li>
+                    <li class="progess-line"><span class="p-disc">Javascript</span><span class="p-line"></span></li>
+                    <li class="progess-line"><span class="p-disc">PHP</span><span class="p-line"></span></li>
+                    <br><br>
+                    <a href="#contact-me"><button class="btn-round btn-gradient-2">Contact me</button></a>
+                </div>
+                <!-- <img width="400" src="img/pc.png" /> -->
+                
+                <i class="fa fa-code skills-img" style="font-size: 200px; margin-right: 20px; color: #37506c; text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.3);" ></i>
+            </div>
+         </div>
+           
+        </div>
+
+         <div id="works" class="works-section center-content">
+            <h1 class="large-header">My Works</h1>
+            <p class="disc-parag-center">I am a developer for over 5 year and I developed some experince in this years.</p>
+            <ul class="work-menus">
+                <li onclick="displayWorks(0);" id="all-dev">ALL</li>
+                <li onclick="displayWorks(1);" id="web-dev">WEB DEVELOPMENT</li>
+                <li onclick="displayWorks(2);" id="app-dev">APP DEVELOPMENT</li>
+            </ul>
+            <div class="row-center">
+                <div class="works-img web-img">
+                    <div class="img-cover img-cover-1">
+                        <h4><span>WEBSITE DEVELOPMENT</span><br>NGT TECHNOLOGY GROUP</h4>
+                    </div>
+                    <img width="400px" src="img/work-1.png" />
+                </div>
+
+                <div class="works-img web-img">
+                    <div class="img-cover img-cover-2">
+                        <h4><span>WEBSITE DEVELOPMENT</span><br>ODAA NATION</h4>
+                    </div>
+                    <img width="400px" src="img/work-2.png" />
+                </div>
+
+                <div class="works-img app-img">
+                    <div class="img-cover img-cover-3">
+                        <h4><span>APP DEVELOPMENT</span><br>ASTU ID MAKER</h4>
+                    </div>
+                    <img width="400px" src="img/work-3.png" />
+                </div>
+            </div>
+         </div>
+
+         <div id="contact-me" class="contact-section">
+            <h2 class="header-center"><span>Contact me</span></H2>
+            <div class="row-center">
+                <div class="contact-image">
+                    <img width="400" src="img/image-1.jpg" />
+                    <p>DABALA YONAS</p>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="disc-content">
+                    <p><a href="tel:+251910227023"><i class="fa fa-phone" aria-hidden="false"></i> +251 910 22 7023</a></p>
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dabo.yonasl@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>  dabo.yonasl@gmail.com</a></p>
+                    <br>
+                    <a href="https://www.facebook.com/dabala.yonas.asefa" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="social-media-icons fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/dabala_yonas" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-twitter social-media-icons"></i></a>
+                    <a href="https://www.instagram.com/dabalayonas/" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-instagram social-media-icons"></i></a>
+                    <a href="https://t.me/daboyon" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-telegram social-media-icons"></i></a>
+                    <a href="https://www.github.com/dabalayonas" target="_blank"><i style="font-size: 30px; margin-right: 20px;" class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+         </div>
+
+    </body>
+</html>
