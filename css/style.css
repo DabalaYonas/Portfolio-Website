@@ -145,12 +145,13 @@ a {
     position: absolute;
     right: 0px;
     bottom: -2px;
+    width: 36%;
 }
 
 .hero-bottom-bar {
     position: absolute;
     bottom: 0;
-    background-color: #90ffaa;
+    background: linear-gradient(90deg, #01ff77, #053d00);
     color: white;
     padding: 16px 30px;
     left: 28%;
@@ -599,7 +600,7 @@ a {
     }
 
     .contact-image img {
-        width: 80%;
+        width: 50%;
     }
 }
 
