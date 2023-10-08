@@ -36,12 +36,12 @@ body {
 }
 
 .nav-bar {
-    background-color: #37506c;
+    background-color: #050511;
     box-shadow: #00000020 0px 0px 10px;
 }
 
 nav {
-    color: #ffffff;
+    color: #fff;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -67,6 +67,10 @@ a {
     font-size: 18px;
 }
 
+.menus li:hover {
+    color: #aaa;
+}
+
 .row-2 {
     display: flex;
     justify-content: space-between;
@@ -83,12 +87,12 @@ a {
 
 .content {
     height: calc(100vh - 70px);
-    background-color: #37506c;
+    background-color: #050511;
 }
 
 .content-left {
     position: absolute;
-    padding: 100px;
+    padding: 80px;
     top: 20%;
     border-radius: 0px 300px 300px 0px;
     background: linear-gradient(#fef58f34, #ff334e2d);
@@ -302,7 +306,7 @@ a {
 
 .disc-content p {
     color: #37506c;
-    margin: 6px 0px;
+    margin: 12px 0px;
     font-size: 18px;
 }
 
@@ -348,7 +352,7 @@ a {
     cursor: pointer;
 }
 
-#all-dev {
+.work-menus .active {
     color: #37506c;
 }
 
@@ -479,7 +483,13 @@ a {
 }
 
 .footer-bottom {
-    padding: 16px 20px;
+    padding: 20px 20px;
+    color: #555;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #aaaaaa70;
 }
 
 .mr-t-2 {

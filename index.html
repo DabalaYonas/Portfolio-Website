@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dabala Yonas</title>
+        <title>Dabala Yonas - Portfolio</title>
         <meta name="viewport" content="width=device-width" />
 
         <link rel="stylesheet" href="./css/all.css" type='text/css'/>
@@ -32,10 +32,17 @@
                 }, 300);
 
             };
-            function displayWorks(a) {
+            function displayWorks(e, inx) {
                 var webs = document.getElementsByClassName("web-img");
                 var apps = document.getElementsByClassName("app-img");
-                if (a === 0) {
+                
+                var menus = document.getElementsByClassName("work-menus")[0].children;
+                for(let menu of menus) {
+                    menu.classList.remove("active");
+                }
+                
+                e.classList.toggle("active");
+                if (inx === 0) {
                     for(let web of webs) {
                         web.style.display = "block";
                     }
@@ -43,7 +50,7 @@
                     for(let app of apps) {
                         app.style.display = "block";
                     }
-                } else if (a == 1) {
+                } else if (inx == 1) {
                     for(let web of webs) {
                         web.style.display = "block";
                     }
@@ -51,7 +58,7 @@
                     for(let app of apps) {
                         app.style.display = "none";
                     }
-                } else if(a == 2) {
+                } else if(inx == 2) {
                     for(let app of apps) {
                         app.style.display = "block";
                     }
@@ -101,7 +108,7 @@
                 <br><br>
                 <a href="#about"><button class="btn-gradient">KNOW ME MORE</button></a>
             </div>
-            <img class="right-image" src="img/image-2.png" />
+            <img class="right-image" src="img/image-2.webp" />
          </div>
         </div>
 
@@ -109,7 +116,7 @@
             <div class="row-center">
                 <div class="about-image-1">
                     <div class="about-image">
-                        <img class="normal-size-img" src="img/image-2.jpg" />
+                        <img class="normal-size-img" src="img/image-3.webp" />
                     </div>
                     </div>
                 <div class="about-disc">
@@ -149,11 +156,11 @@
                     <a href="#contact-me"><button class="btn-round btn-gradient-2">Contact me</button></a>
                 </div>
                 
-                <img class="skills-img" width="320" src="img/mobile-1.png" />
+                <img class="skills-img" width="320" src="img/mobile-1.webp" />
             </div> 
             
             <div class="row-2">
-                <img class="skills-img" width="400" src="img/pc.png" />
+                <img class="skills-img" width="400" src="img/pc.webp" />
                 <div class="skills-text">
                     <h2 class="large-header">Website <br><span>Design & Developer</span></h2>
                     <p class="disc-parag">As a web developer, I specialize in designing and building functional websites using HTML, CSS, and JavaScript. 
@@ -197,30 +204,30 @@
             <h1 class="large-header">My Works</h1>
             <p class="disc-parag-center">I am a developer for over 5 year and I developed some experince in this years.</p>
             <ul class="work-menus">
-                <li onclick="displayWorks(0);" id="all-dev">ALL</li>
-                <li onclick="displayWorks(1);" id="web-dev">WEB DEVELOPMENT</li>
-                <li onclick="displayWorks(2);" id="app-dev">APP DEVELOPMENT</li>
+                <li onclick="displayWorks(this, 0);" id="all-dev">ALL</li>
+                <li onclick="displayWorks(this, 1);" id="web-dev">WEB DEVELOPMENT</li>
+                <li onclick="displayWorks(this, 2);" id="app-dev">APP DEVELOPMENT</li>
             </ul>
             <div class="row-center">
                 <div class="works-img web-img">
                     <div class="img-cover img-cover-1">
                         <h4><span>WEBSITE DEVELOPMENT</span><br>NGT TECHNOLOGY GROUP</h4>
                     </div>
-                    <img width="350" src="img/work-1.png" />
+                    <img width="350" src="img/work-1.webp" />
                 </div>
 
                 <div class="works-img web-img">
                     <div class="img-cover img-cover-2">
                         <h4><span>WEBSITE DEVELOPMENT</span><br>ODAA NATION</h4>
                     </div>
-                    <img width="350" src="img/work-2.png" />
+                    <img width="350" src="img/work-2.webp" />
                 </div>
 
                 <div class="works-img app-img">
                     <div class="img-cover img-cover-3">
                         <h4><span>APP DEVELOPMENT</span><br>ASTU ID MAKER</h4>
                     </div>
-                    <img width="350" src="img/work-3.png" />
+                    <img width="350" src="img/work-3.webp" />
                 </div>
             </div>
          </div>
@@ -229,7 +236,7 @@
             <h2 class="header-center"><span>Contact me</span></H2>
             <div class="row-center">
                 <div class="contact-image">
-                    <img width="300" src="img/image-1.jpg" />
+                    <img width="300" src="img/image-1.webp" />
                     <p>DABALA YONAS</p>
                     <p>Software Engineer</p>
                 </div>
