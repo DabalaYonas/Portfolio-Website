@@ -155,18 +155,20 @@ a {
 .hero-bottom-bar {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(90deg, #01ff77, #01ff77, #053d00);
+    /* background: linear-gradient(90deg, #01ff77, #01ff77, #053d00); */
     color: white;
     padding: 16px 30px;
-    left: 28%;
+    left: 25%;
     border-radius: 20px;
 }
 
 .bottom-bar-text {
     color: #fff;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.65em;
     padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .line-h {
@@ -687,7 +689,7 @@ hr {
 
     .bottom-bar-text {
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px 6px;
     }
 
