@@ -210,7 +210,7 @@ a {
 }
 
 .skills-section {
-    padding: 40px 100px;
+    padding: 60px 100px;
     background: #fafaff;
 }
 
@@ -281,11 +281,18 @@ a {
 .large-header {
     font-weight: 900;
     color: #37506c;
-    font-size: 40px;
+    font-size: 2.2em;
+    line-height: 44px;
 }
 
 .large-header span {
     font-weight: normal;
+}
+
+.small-header {
+    font-size: 1.2em;
+    color: #0f99e4;
+    font-weight: 500;
 }
 
 .disc-parag {
@@ -301,7 +308,7 @@ a {
 }
 
 .disc-content p a:hover {
-    color: #00a5ff;
+    color: #0f99e4;
 }
 
 .disc-content p {
@@ -580,7 +587,7 @@ hr {
     }
 
     .skills-section {
-        padding: 30px 0px;
+        padding: 50px 0px;
     }
 
     .skills-text {
@@ -705,7 +712,7 @@ hr {
     }
 
     .skills-section {
-        padding: 30px 0px;
+        padding: 50px 0px;
     }
 
     .skills-img {
