@@ -341,7 +341,7 @@ a {
 }
 
 .works-section {
-    padding: 20px;
+    padding: 60px 40px;
 }
 
 .work-menus li {
@@ -439,6 +439,7 @@ a {
 }
 
 .contact-section {
+    background: #f7f7f7;
     padding: 0px 20px;
 }
 
