@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="./css/style.css" type='text/css'/>
       
         <script>
-
             window.onload = function() {
                 var text = document.getElementById("disc");
                 var words = ["I", "'", "m", " ", "a", " ", "S", "o", "f", "t", "w", "a", "r", "e", " ", "E", "n", "g", "i", "n", "e", "e", "r"];
@@ -30,6 +29,25 @@
                 setTimeout(() => {
                     myloop();
                 }, 300);
+
+                document.addEventListener("scroll", function(event) {
+                    const skillTexts = document.getElementsByClassName("skills-text");
+                    const skillImages = document.getElementsByClassName("skills-img");
+                    animateObject(skillTexts, "move-down-anim");
+                    animateObject(skillImages, "move-up-anim");
+
+                function animateObject(elements, className) {
+                    const windowOffsetTop = window.innerHeight + window.scrollY;
+
+                    Array.prototype.forEach.call(elements, (element) => {
+                        const elementOffsetTop = element.offsetTop;
+
+                        if (windowOffsetTop >= (elementOffsetTop + 20)) {
+                            addClass(element, className);
+                        }
+                    });
+                }
+                });
 
             };
             function displayWorks(e, inx) {
@@ -68,7 +86,15 @@
                     }
                 }
             }
-        </script>
+
+        function addClass(element, className) {
+            const arrayClasses = element.className.split(" ");
+            if (arrayClasses.indexOf(className) === -1) {
+                element.className += " " + className;
+            }
+        }
+
+</script>
 
     </head>
     <body>
