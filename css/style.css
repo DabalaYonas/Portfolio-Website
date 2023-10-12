@@ -18,6 +18,10 @@
 @import url(./fonts/webfonts/fa-solid-900.ttf);
 @import url(./fonts/webfonts/fa-v4compatibility.ttf);
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
