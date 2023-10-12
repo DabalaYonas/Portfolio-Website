@@ -600,6 +600,7 @@ hr {
     }
 
     .skills-img {
+        display: none;
         width: 50%;
         font-size: 300px;
     }
@@ -721,6 +722,7 @@ hr {
     }
 
     .skills-img {
+        display: none;
         width: 100%;
         font-size: 300px;
     }
